@@ -1,0 +1,70 @@
+## 利器
+----
+### 你都在使用哪些硬件？
+
+- 不久前刚换了一台[Macbook Pro](https://www.apple.com/macbook-pro/) (Mid 2015)，除此之外Apple家的产品有[iPhone 5S](http://www.apple.com/iphone-5s/specs/) (A1528)，[iPod Suffle](http://www.apple.com/ipod-shuffle/)以及主力鼠标[Magic Mouse](http://www.apple.com/magicmouse/)。
+
+- 一台[Kindle Paperwhite](http://www.amazon.com/dp/B00I15SB16)用作主要的阅读设备，是我在 2012 年从日亚海淘来的，那时候中亚还没有正式发售。
+
+- 键盘是一款红轴的[KBT Race Ⅱ](http://rabbitwebfactory.com/pages/kbt_race_2)，你可以[点击这里](http://unitpixel.com/archives/race2test.html)查看我的测评。
+
+- [LaCie Porsche Design Mobile Drive](https://www.lacie.com/us/products/product.htm?id=10649) 这块移动硬盘和 Macbook 设计感相同，主要用来 Time Machine 以及存储一些资料。
+
+### 软件呢？
+
+- #### Mac OS
+
+	- [Xcode](https://developer.apple.com/xcode/) 平时就是靠它来撸代码了。
+
+	- [Dash](https://kapeli.com/dash) 各种 API 官方文档查阅软件，前段时间更新时半价入的。
+
+	- [Sketch](http://bohemiancoding.com/sketch/) 自从有了它，我的 Photoshop 就很少打开过了，简直好用到爆。
+
+	- [Keynote](http://www.apple.com/cn/mac/keynote/) 文艺青年都喜欢，看了许岑的教程后感觉做起presentation来更得心应手了。
+
+	- [1Password](https://agilebits.com/onepassword/mac) 我的密码都在里面，平时通过 Wifi 或者 [Dropbox](https://www.dropbox.com/) 与移动设备同步。
+
+	- [Spotify](http://spotify.com) 除了[网易云音乐](http://music.163.com/)用的最多的就是它了，找新歌基本都靠它，除此之外[Luoo.net](http://www.luoo.net/)也是我经常听音乐的地方。
+
+	- [Mailbox](http://www.mailboxapp.com) Mac/iOS 平台下邮件都用它管理。
+
+	- [Tower](https://tower.im) 和伙伴们进行协作少不了它。
+
+	- [Mou](http://25.io/mou/) 用了很久的 [Markdown](https://zh.wikipedia.org/zh/Markdown) 编辑器，今年8月份就要更新了，已预购。
+
+	- [Moom](http://manytricks.com/moom/) 开启多个窗口后有了它就不用再一点点的拖放大小了。
+
+	- [Pixy](http://www.formacx.com/project/pixy) 我的照片都由它来管理。
+
+	- [Chrome](https://www.google.com/chrome/browser/desktop/index.html) 主力的浏览器，偶尔使用 [Safari](https://www.apple.com/cn/safari/)。[SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=zh-CN) 用来管理翻墙用的代理，翻墙服务我使用的是[土行孙](https://tuxingsun.net/share/6f750o6f)。其他扩展还有 [Evernote Web Clipper](https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc?hl=zh-CN)、[AdBlock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb?hl=zh-CN)。
+
+- #### iOS
+
+	- [Castro](http://castro.fm/) 最喜欢的 Podcast 应用，在有 Wifi 的地方把要听的节目缓存下来，出去就只管畅听了。
+
+	- [Tweetbot](http://tapbots.com/tweetbot/) 刷 Twitter 利器。 
+
+	- [墨客](http://www.moke.com/) 一直在用的微博 APP，期间有用过一段时间 [VVebo](http://vvebo.me)。主要还是因为各种操作以及界面布局和 [Tweetbot](http://tapbots.com/tweetbot/) 比较相似。
+	
+	- [IFTTT](https://ifttt.com) 各个平台之间协作的利器，我用它来同步我的微博到 Twitter，保存我喜欢的 [Instagram](https://instagram.com) 图片到 [Dropbox](https://www.dropbox.com/)，以及加星的邮件到我的 [Evernote](http://evernote.com) 等等，极大的方便了我的日常。
+
+	- [Launcher](https://itunes.apple.com/cn/app/launcher-favorites-at-your/id905099592?mt=8&ign-mpt=uo%3D4) 让我更加方便的在 iPhone 上进行一些操作，拉下菜单就可以，不用再去一层层的点了。
+
+	- [DailyCost](http://www.dailycost.com/) 平时记录一下花费还是蛮方便的，UI 什么的都比较讨人喜欢。
+
+	- [MacID](http://macid.co) 有了它我在 Macbook 上的操作就不用每次输密码了，录入以下指纹什么的简直不要更方便了。
+
+	- [Pasteasy](http://www.pasteasy.com/) Mac/iOS 之间互相传东西就靠他了。
+
+
+
+### 推荐一件生活中的利器给大家
+
+平时做一些记录还是需要手写，这里我推荐一下我用了很多年的 [LAMY All-Star](http://www.lamy.com.hk/product.html?id=43) 无论是外观还是笔触都算得上令人满意。另外，MITSUBISHI UB-150 以及 MUJI 家的软笔也是我日常比较喜欢使用的。
+
+
+
+
+
+
+
