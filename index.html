@@ -1,165 +1,37 @@
-<!DOCTYPE html><html>
-
-<head>
-<meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" type="text/css" href="GitHub2.css">
-
-<style> @media print{ {.hljs{overflow: visible; word-wrap: break-word;} }</style></head><body>
-<h1 id="toc_0">NSDictionary 字典</h1>
-
-<h3 id="toc_1">NSDictionary 不可变字典</h3>
-
-<ul>
-<li><strong>initWithObjectsAndKeys</strong>    <code>初始化一个字典对象</code>
-&gt; 在初始化时 一次性存储多个键值对(条目) <code>value</code> 在前 <code>key</code> 在后 之间用 <code>,</code> 隔开</li>
-</ul>
-
-<pre><code class="language-Objective-C">NSDictionary *jinPing = [[NSDictionary alloc] initWithObjectsAndKeys:@&quot;jinPing&quot;,@&quot;name&quot;,@&quot;男&quot;,@&quot;sex&quot;,@14,@&quot;aage&quot;,nil];
-
-</code></pre>
-
-<ul>
-<li><strong>valueForKey</strong>    <code>通过 key 获取 value</code></li>
-</ul>
-
-<pre><code class="language-Objective-C">NSString *sex = [jinPing valueForKey:@&quot;sex&quot;];
-
-</code></pre>
-
-<ul>
-<li><strong>allKeys</strong>    <code>获取所有的 key</code></li>
-</ul>
-
-<pre><code class="language-Objective-C">NSArray *allkey = [jinPing allKeys];
-
-</code></pre>
-
-<ul>
-<li><strong>allValue</strong>    <code>获取所有的 value</code></li>
-</ul>
-
-<pre><code class="language-Objective-C">NSSArray *allvalue = [jinPing allValues];
-
-</code></pre>
-
-<h4 id="toc_2">遍历字典</h4>
-
-<pre><code class="language-Objective-C">for(int i = 0; i &lt; allkey.count; i ++) {
-    //获取对应的 key
-    NSString *key = [allkey objectAtIndex:i];
-    //通过对应的 key 获取对应的 value
-    NSString *value = [jinPing valueForKey:key];
-    
-</code></pre>
-
-<h4 id="toc_3">快速枚举</h4>
-
-<blockquote>
-<p>快速得到字典的每一个 key 值(对于字典 只能枚举到 key , 想要获取 value 还需要使用 valueForKey 方法)</p>
-</blockquote>
-
-<pre><code class="language-Objective-C">for (NSString *key in jinPing) {
-    //通过 key 快速获取对应的 value
-    NSLog(@&quot;value = %@&quot;,[jinPing valueForKey:key]);
-    
-</code></pre>
-
-<hr/>
-
-<h3 id="toc_4">NSMutableDictionary 可变字典</h3>
-
-<pre><code class="language-Objective-C">NSMutableDictionary *daHa = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@&quot;daHa&quot;,@&quot;name&quot;,@&quot;m&quot;,@&quot;sex&quot;,@&quot;78&quot;,@&quot;age&quot;,@&quot;zuYing&quot;,@&quot;hobby&quot;,nil];
-
-</code></pre>
-
-<h4 id="toc_5">添加 / 修改 / 删除</h4>
-
-<pre><code class="language-Objective-C">[daHa setObject:nil forKey:@&quot;weight&quot;];
-
-[daHa setValue:nil forKey:@&quot;weight&quot;];
-
-</code></pre>
-
-<blockquote>
-<p>setObject:forKey: 和 setValue:forKey: 都可以添加键值对 但是,前者不允许添加的为空<br/>
-setValue:forkey: 除了可以添加键值对也可以修改,甚至产生删除效果.如果键值对存在则修改 value 的值, 如果不存在则会添加新的键值对. 如果给的 value 参数为 nil, 则删除对应的键值对</p>
-</blockquote>
-
-<ul>
-<li><strong>removeObjectForKey</strong>    <code>同过给定的 key 删除相应的键值对</code></li>
-</ul>
-
-<pre><code class="language-Objective-C">[daHa removeObjectForKey:@&quot;sex&quot;];
-
-</code></pre>
-
-<ul>
-<li><strong>removeAllObjects</strong>    <code>删除所有键值对</code></li>
-</ul>
-
-<pre><code class="language-Objective-C">[daHa removeAllObjects];
-
-</code></pre>
-
-<hr/>
-
-<h4 id="toc_6">使用 字典 \ 数组 来表示 省 市 区</h4>
-
-<pre><code class="language-Objective-C">//海淀区 和 朝阳区
-NSDictionary *haiDian = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;海淀区&quot;,@&quot;areName&quot;,@211,@&quot;population&quot;, nil];
-        
-NSDictionary *chaoYang = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;朝阳区&quot;,@&quot;areName&quot;,@183,@&quot;population&quot;, nil];
-        
-//区数组
-NSArray *ares1 = [NSArray arrayWithObjects:haiDian,chaoYang, nil];
-        
-//北京市
-NSDictionary *beiJing = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;北京市&quot;,@&quot;cityName&quot;,ares1,@&quot;areArr&quot;, nil];
-        
-//二七区 和 金水区
-NSDictionary *erQi = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;二七区&quot;,@&quot;areName&quot;,@54,@&quot;population&quot;, nil];
-        
-NSDictionary *jinShui = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;金水区&quot;,@&quot;areName&quot;,@81,@&quot;population&quot;, nil];
-        
-NSArray *ares2 = [NSArray arrayWithObjects:erQi,jinShui, nil];
-        
-//郑州市
-NSDictionary *zhengZhou = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;郑州市&quot;,@&quot;cityName&quot;,ares2,@&quot;areArr&quot;, nil];
-        
-//城市数组
-NSArray *citys = [NSArray arrayWithObjects:beiJing,zhengZhou, nil];
-        
-//创建省
-NSDictionary *provinceDic = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;河南省&quot;,@&quot;provinceName&quot;,citys,@&quot;cityArr&quot;, nil];
-        
-NSLog(@&quot;%@&quot;,provinceDic);
-
-</code></pre>
-
-<blockquote>
-<p>获取海淀区人数 -&gt; 海淀区 -&gt; 区数组(北京) -&gt; 北京市 -&gt; 市数组</p>
-</blockquote>
-
-<pre><code class="language-Objective-C">//获取城市数组
-NSArray *cities = [provinceDic valueForKey:@&quot;cityArr&quot;];
-        
-//获取城市(北京)
-NSDictionary *beiJing1 = [cities objectAtIndex:0];
-        
-//区数组
-NSArray *ares3 = [beiJing1 valueForKey:@&quot;areArr&quot;];
-        
-//获取海淀
-NSDictionary *haiDian1 = [ares3 objectAtIndex:0];
-
-//获取人口
-NSNumber *population = [haiDian1 valueForKey:@&quot;population&quot;];
-        
-NSLog(@&quot;海淀区的人口为%@&quot;,population);
-
-</code></pre>
-
-</body>
-
-</html>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>E8A1</title>
+<meta name="viewport" content="user-scalable=no,width=device-width">
+<link rel="stylesheet" href="i/i.css">
+<header>
+	<h1><a href="#/home">E8A1</a></h1>
+	<p>Code is poetry.</p>
+</header>
+<section>
+	<xmp>
+	{{#.}}
+	<article>
+		<span class="num"></span>
+		<span class="size">{{size}}</span>
+		<h3><a href="#/{{url}}">{{title}}</a></h3>
+	</article>
+	{{/.}}
+	</xmp>
+</section>
+<article class="article">
+	<xmp>
+	<div class="text">{{{text}}}</div>
+	<span class="size">{{size}}</span>
+	<a class="home" href="#/home">返回首页</a>
+	</xmp>
+</article>
+<footer>✒️ 依托 GitHub Pages 搭建</footer>
+<script>
+var
+gitConfig={
+	ssh:'git@github.com:SamWanng/samwanng.github.io.git'
+}
+</script>
+<script src="i/itorr2.js"></script>
+<script src="http://front.dog/smartisan/i/mustache.min.js"></script>
+<script src="i/gitblog.js"></script>
