@@ -1,1 +1,1 @@
-Just a Blog.
+Created by Jekyll Writer
